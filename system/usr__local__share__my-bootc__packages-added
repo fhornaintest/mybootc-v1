@@ -1,0 +1,27 @@
+####################################################
+# List of packages to install on top of base image
+####################################################
+
+# Podman
+podman
+
+# Cockpit
+cockpit
+cockpit-podman
+cockpit-selinux
+cockpit-machines
+
+# Virtualisation
+qemu-kvm
+libvirt
+virt-install
+virt-viewer
+
+# Tailscale network
+tailscale
+
+# Troubleshooting
+lshw
+htop
+ncdu
+nmap
