@@ -1,0 +1,11 @@
+[customizations.installer.kickstart]
+contents = """
+text
+clearpart --all --initlabel --disklabel=gpt
+autopart --noswap
+"""
+
+[customizations.installer.modules]
+disable = [
+  "org.fedoraproject.Anaconda.Modules.Users"
+]
