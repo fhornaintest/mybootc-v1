@@ -34,6 +34,7 @@ COPY --chmod=0644 ./system/usr__lib__credstore__home.create.admin /usr/lib/creds
 COPY --chmod=0755 ./scripts/* /tmp/scripts/
 RUN /tmp/scripts/config-users
 RUN /tmp/scripts/config-authselect && rm -r /tmp/scripts
+RUN echo "KEYMAP=fr-mac" > /etc/vconsole.conf
 
 # SYSTEMD
 COPY --chmod=0644 ./systemd/usr__lib__systemd__system__firstboot-setup.service /usr/lib/systemd/system/firstboot-setup.service
